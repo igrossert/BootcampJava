@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76a32d43-6937-4ad1-b381-6ed3e4673952" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exercicio2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663936443553</updated>
       <workItem from="1663936445387" duration="6691000" />
-      <workItem from="1664123506232" duration="425000" />
+      <workItem from="1664123506232" duration="803000" />
     </task>
     <task id="LOCAL-00001" summary="wip: iniciando a implementacao">
       <created>1664122640747</created>
