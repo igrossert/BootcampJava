@@ -1,4 +1,4 @@
-package exercicio3;
+package imc;
 
 public class Pessoa {
     private String nome, id;
