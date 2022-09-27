@@ -1,4 +1,4 @@
-package exercicio3;
+package imc;
 
 public class Main {
     public static void main(String[] args) {

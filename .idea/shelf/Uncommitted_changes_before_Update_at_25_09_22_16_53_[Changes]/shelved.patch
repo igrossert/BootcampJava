@@ -1,0 +1,18 @@
+Index: exercicio2/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/exercicio2/.idea/.gitignore b/exercicio2/.idea/.gitignore
+deleted file mode 100644
+--- a/exercicio2/.idea/.gitignore	(revision 14ceee5c89288ebbe00842676304989a5fe4b7e7)
++++ /dev/null	(revision 14ceee5c89288ebbe00842676304989a5fe4b7e7)
+@@ -1,8 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+-# Editor-based HTTP Client requests
+-/httpRequests/
+-# Datasource local storage ignored files
+-/dataSources/
+-/dataSources.local.xml
