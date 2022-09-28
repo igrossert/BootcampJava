@@ -1,15 +1,19 @@
 package exercicio2;
 
-public class Participante {
-    private String RG;
-    private String nome;
-    private String sobrenome;
-    private String grupoSanguineo;
-    private int idade;
-    private int numeroCelular;
-    private int numeroEmergencia;
-    private int numeroInscricao;
+public class Participante extends Circuito{
+    String RG, nome, sobrenome, tipoSanguineo, numeroCelular, numeroEmergencia;
+    int idade;
 
+    public Participante(String RG, String nome, String sobrenome, String tipoSanguineo, String numeroCelular, String numeroEmergencia, int idade, String categoria) {
+        super(categoria);
+        this.RG = RG;
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.tipoSanguineo = tipoSanguineo;
+        this.numeroCelular = numeroCelular;
+        this.numeroEmergencia = numeroEmergencia;
+        this.idade = idade;
+    }
 
     public String getRG() {
         return RG;
@@ -35,12 +39,28 @@ public class Participante {
         this.sobrenome = sobrenome;
     }
 
-    public String getGrupoSanguineo() {
-        return grupoSanguineo;
+    public String getTipoSanguineo() {
+        return tipoSanguineo;
     }
 
-    public void setGrupoSanguineo(String grupoSanguineo) {
-        this.grupoSanguineo = grupoSanguineo;
+    public void setTipoSanguineo(String tipoSanguineo) {
+        this.tipoSanguineo = tipoSanguineo;
+    }
+
+    public String getNumeroCelular() {
+        return numeroCelular;
+    }
+
+    public void setNumeroCelular(String numeroCelular) {
+        this.numeroCelular = numeroCelular;
+    }
+
+    public String getNumeroEmergencia() {
+        return numeroEmergencia;
+    }
+
+    public void setNumeroEmergencia(String numeroEmergencia) {
+        this.numeroEmergencia = numeroEmergencia;
     }
 
     public int getIdade() {
@@ -49,29 +69,5 @@ public class Participante {
 
     public void setIdade(int idade) {
         this.idade = idade;
-    }
-
-    public int getNumeroCelular() {
-        return numeroCelular;
-    }
-
-    public void setNumeroCelular(int numeroCelular) {
-        this.numeroCelular = numeroCelular;
-    }
-
-    public int getNumeroEmergencia() {
-        return numeroEmergencia;
-    }
-
-    public void setNumeroEmergencia(int numeroEmergencia) {
-        this.numeroEmergencia = numeroEmergencia;
-    }
-
-    public int getNumeroInscricao() {
-        return numeroInscricao;
-    }
-
-    public void setNumeroInscricao(int numeroInscricao) {
-        this.numeroInscricao = numeroInscricao;
     }
 }

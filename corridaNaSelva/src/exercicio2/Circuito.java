@@ -1,32 +1,53 @@
 package exercicio2;
 
-public class Circuito {
+import java.util.ArrayList;
+import java.util.SimpleTimeZone;
 
-    private static final int CIRCUITO_PEQUENO_MENOR_IDADE = 1300;
-    private static final int CIRCUITO_MEDIO_MENOR_IDADE = 2000;
+enum Categorias {
+    PEQUENO, MEDIO, AVANCADO;
 
-    private static final int CIRCUITO_PEQUENO_MAIOR_IDADE = 1500;
-    private static final int CIRCUITO_MEDIO_MAIOR_IDADE = 2300;
-    private static final int CIRCUITO_GRANDE_MAIOR_IDADE = 2800;
+}
+public class Circuito{
 
+    String nomeCategoria;
 
-    public static int getCircuitoPequenoMenorIdade() {
-        return CIRCUITO_PEQUENO_MENOR_IDADE;
+    public Circuito(String categoria) {
+        this.nomeCategoria = categoria;
     }
 
-    public static int getCircuitoMedioMenorIdade() {
-        return CIRCUITO_MEDIO_MENOR_IDADE;
+    public static int getValorInscricao(int idade, String nomeCategoria) throws Exception {
+
+        if (nomeCategoria.equalsIgnoreCase(Categorias.PEQUENO.name())){
+            if(idade < 18) return 1300; else return 1500;
+        }
+
+        if (nomeCategoria.equalsIgnoreCase(Categorias.MEDIO.name())){
+            if(idade < 18) return 2000; else return 2300;
+        }
+
+        if (nomeCategoria.equalsIgnoreCase(Categorias.AVANCADO.name())){
+            if(idade < 18) {
+                throw new Exception("Menores de 18 anos não podem se inscrever nesta modalidade.");
+            }
+            return 2800;
+        }
+        return -1;
     }
 
-    public static int getCircuitoPequenoMaiorIdade() {
-        return CIRCUITO_PEQUENO_MAIOR_IDADE;
+    public static void getInscricoesPorCategoria(ArrayList<Inscricao> inscricoes, String categoria) throws Exception {
+        for (Inscricao inscricao : inscricoes) {
+            if (inscricao.nomeCategoria == categoria){
+                System.out.println(inscricao.toString());
+            }
+        }
     }
 
-    public static int getCircuitoMedioMaiorIdade() {
-        return CIRCUITO_MEDIO_MAIOR_IDADE;
-    }
-
-    public static int getCircuitoGrandeMaiorIdade() {
-        return CIRCUITO_GRANDE_MAIOR_IDADE;
+    public static void deletarInscricao(ArrayList<Inscricao> inscricoes, int numeroInscricao){
+        for (int i = 0; i < inscricoes.size(); i++) {
+            if (inscricoes.get(i).numeroInscricao == numeroInscricao){
+                inscricoes.remove(i);
+            }
+        }
     }
 }
+
