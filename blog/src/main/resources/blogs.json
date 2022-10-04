@@ -1,0 +1,11 @@
+[ {
+  "id" : 1,
+  "titulo" : "Politica",
+  "nomeAutor" : "Carlão",
+  "dataPublicacao" : "20/12/2022"
+}, {
+  "id" : 2,
+  "titulo" : "Politica",
+  "nomeAutor" : "Carlin",
+  "dataPublicacao" : "20/12/2022"
+} ]
